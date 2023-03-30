@@ -15,7 +15,7 @@ function Login() {
         if(input.email===loggeduser.email && input.password ===loggeduser.password)
         {
             localStorage.setItem("loggedin",true)
-            navigate('/')
+            navigate('/home')
 
         }else{
             alert("Wrong Email or Password ")
@@ -59,7 +59,7 @@ function Login() {
         </div>
         <p className="link text-right">
         {/* Have already an account? <a href="/sign-up">sign up</a> */}
-        Have already an account? <Link to="/sign-up">sign up</Link>
+        Have already an account? <Link to="/">sign up</Link>
 
         </p>
       </form>

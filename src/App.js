@@ -5,8 +5,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Login from "./components/Login";
 import SignUp from "./components/SignUp.js";
 import Home from "./components/Home";
-import 'bootstrap/dist/css/bootstrap.min.css';
-
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
     return (
@@ -14,12 +13,18 @@ function App() {
             <div className="App">
                 {/* <div className="auth-wrapper">
                     <div className="auth-inner"> */}
-                        <Routes>
+                {/* <Routes>
                             <Route exact path="/" element={<Home />} />
                             <Route path="/sign-in" element={<Login />} />
                             <Route path="/sign-up" element={<SignUp />} />
-                        </Routes>
-                    {/* </div>
+                        </Routes> */}
+
+                <Routes>
+                    <Route exact path="/home" element={<Home />} />
+                    <Route path="/sign-in" element={<Login />} />
+                    <Route path="/" element={<SignUp />} />
+                </Routes>
+                {/* </div>
                 </div> */}
             </div>
         </Router>
